@@ -57,8 +57,8 @@ and size estimation**, CVPR, 2019
 The NOCS CAMERA and REAL275 datasets were provided along with the work done by Wang et al. [1]. All the data can be downloaded [here](https://github.com/hughw19/NOCS_CVPR2019).
 
 ### Known issues
-* Code and data are not provided with an open license (see [Issue#57](https://github.com/hughw19/NOCS_CVPR2019/issues/57)) and hence both code and data should be assumed under copyright. Because of this, code and data can only be forked, downloaded, and/or viewed, but not used for any other purpose. Authors declared 
-that the data is only for non-commercial use; however, no license is provided when downloading the data that confirms this. 
+* Code and data are not provided with an open license (see [Issue#57](https://github.com/hughw19/NOCS_CVPR2019/issues/57)) and hence both code and data should be assumed under copyright. Because of this, code and data can only be forked, downloaded, and/or viewed, but not used for any other purpose. Authors declared that the data is only for non-commercial use; however, no license is provided when downloading the data that confirms this. 
+* Software builds on top of [Mask R-CNN](https://github.com/matterport/Mask_RCNN) that was releases under MIT license, and therefore the NOCS repository violates the granted permissions as the original copyright notice and permission notice are not included in all copies or substantial portions of the Software. 
 
 ## Results on NOCS-REAL275
 
