@@ -42,33 +42,46 @@ and size estimation**, CVPR, 2019
 [8] J. Lin, Z. Wei, Z. Li, S. Xu, K. Jia, Y. Li, **DualPoseNet: Category-Level 6D Object Pose and Size Estimation Using Dual Pose Network With Refined Learning of Pose Consistency**, ICCV 2021   
 [[paper](https://openaccess.thecvf.com/content/ICCV2021/papers/Lin_DualPoseNet_Category-Level_6D_Object_Pose_and_Size_Estimation_Using_Dual_ICCV_2021_paper.pdf)][[code](https://github.com/Gorilla-Lab-SCUT/DualPoseNet)]
 
+[9] M. Z. Irshad, T. Kollar, M. Laskey, K. Stone, Z. Kira, **CenterSnap: Single-shot multi-object 3D shape reconstruction and categorical 6D pose and size estimation**, ICRA, 2022   
+[[arxiv](https://arxiv.org/pdf/2203.01929.pdf)][[webpage](https://zubair-irshad.github.io/projects/CenterSnap.html)][[code](https://github.com/zubair-irshad/CenterSnap)]
+
+[10] M. Z. Irshad, S. Zakharov, R. Ambrus, T. Kollar, Z. Kira, A. Gaidon, **ShAPO: Implicit representations for multi-object shape, appearance, and pose optimization**, ECCV, 2002  
+[[arxiv](https://arxiv.org/pdf/2207.13691.pdf)][[webpage](https://zubair-irshad.github.io/projects/ShAPO.html)]
+
 
 -------
 ## The NOCS CAMERA and REAL275 datasets
 
-The NOCS CAMERA and REAL275 datasets were provided along with the work
+The NOCS CAMERA and REAL275 datasets were provided along with the work done by Wang et al. [1]. All the data can be downloaded [here](https://github.com/hughw19/NOCS_CVPR2019).
+
+### Known issues
+* Code and data are not provided with an open license (see https://github.com/hughw19/NOCS_CVPR2019/issues/57) and hence both code and data should be assumed under copyright. Because of this, code and data can only be forked, downloaded, and/or viewed, but not used for any other purpose. Authors declared 
+that the data is only for non-commercial use; however, no license is provided when downloading the data that confirms this. 
 
 ## Results on NOCS-REAL275
 
-|Reference|IoU-25|IoU-50|IoU-75|5°,2cm|5°,5cm|10°,2cm|10°,5cm|10°,10cm| Speed (FPS) |
+|Reference|IoU-25|IoU-50|IoU-75|5°,2cm|5°,5cm|10°,2cm|10°,5cm|10°,10cm| Speed |
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
-| NOCS (32 bins)* | 84.4 | 79.3 | -- | --  | 16.1 | -- | 43.7 | 43.1 | 5 |
-| NOCS (32 bins)  | 84.8 | 78.0 | 30.1 | 7.2 | 10.0 | 13.8 | 25.2 | 25.8 | 5 |
-| NOCS (128 bins) | 84.9 | 80.5 | 30.1 | --  |  9.5 | --  | 26.7  | 26.7 | 5 |
-| [1] [CASS](https://openaccess.thecvf.com/content_CVPR_2020/papers/Chen_Learning_Canonical_Shape_Space_for_Category-Level_6D_Object_Pose_and_CVPR_2020_paper.pdf) |84.2 | 77.7 | -- | -- | 23.5 | -- | 58.0 | 58.3 | -- |
-| [2] [Neural-object-fitting](https://arxiv.org/pdf/2008.08145.pdf) | -- |-- | -- | -- | -- | -- | -- | -- | -- |
-| [3] [Deformnet](https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123660528.pdf) (RGB) | -- | 75.2 | 46.5 |15.7 | 18.8 | 33.7 | 47.4 | -- | -- |
-| [3] [Deformnet](https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123660528.pdf) (RGB-D) | 83.4| 77.3 | 53.2 | 19.3 | 21.4 | 43.2 | 54.1 | -- | 4 |
-| [4] [6-Pack](https://ieeexplore.ieee.org/abstract/document/9196679) | 94.2 | -- | -- | -- | 33.3 | -- | -- | --| 10 |
+| [1] NOCS (32 bins)* | 84.4 | 79.3 | -- | --  | 16.1 | -- | 43.7 | 43.1 | 5 |
+| [1] NOCS (32 bins)  | 84.8 | 78.0 | 30.1 | 7.2 | 10.0 | 13.8 | 25.2 | 25.8 | 5 |
+| [1] NOCS (128 bins) | 84.9 | 80.5 | 30.1 | --  |  9.5 | --  | 26.7  | 26.7 | 5 |
+| [2] [CASS](https://openaccess.thecvf.com/content_CVPR_2020/papers/Chen_Learning_Canonical_Shape_Space_for_Category-Level_6D_Object_Pose_and_CVPR_2020_paper.pdf) |84.2 | 77.7 | -- | -- | 23.5 | -- | 58.0 | 58.3 | -- |
+| [3] [Neural-object-fitting](https://arxiv.org/pdf/2008.08145.pdf) | -- |-- | -- | -- | -- | -- | -- | -- | -- |
+| [4] [Deformnet](https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123660528.pdf) (RGB) | -- | 75.2 | 46.5 |15.7 | 18.8 | 33.7 | 47.4 | -- | -- |
+| [4] [Deformnet](https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123660528.pdf) (RGB-D) | 83.4| 77.3 | 53.2 | 19.3 | 21.4 | 43.2 | 54.1 | -- | 4 |
+| [5] [6-Pack](https://ieeexplore.ieee.org/abstract/document/9196679) | 94.2 | -- | -- | -- | 33.3 | -- | -- | --| 10 |
 | [6] [MSOS](https://ieeexplore.ieee.org/abstract/document/9531548) (RGB)** | 62.0 | 23.4 | 3.0 | -- | -- | -- | -- | 9.6 | -- |
 | [6] [MSOS](https://ieeexplore.ieee.org/abstract/document/9531548) (RGB-D)** | 81.6 | 68.1 | 32.9 | -- | -- | -- | -- | 26.5 | -- |
 | [7] [FS-Net](https://openaccess.thecvf.com/content/CVPR2021/papers/Chen_FS-Net_Fast_Shape-Based_Network_for_Category-Level_6D_Object_Pose_Estimation_CVPR_2021_paper.pdf) | 95.1 | 92.2 | 63.5 | -- | 28.2 | -- | 60.8 | 64.6 | 20 |
 | [8] [DualPose](https://openaccess.thecvf.com/content/ICCV2021/papers/Lin_DualPoseNet_Category-Level_6D_Object_Pose_and_Size_Estimation_Using_Dual_ICCV_2021_paper.pdf) | -- | 79.8 | 62.2 | 29.3 | 35.9 | 50.0 | 66.8 | -- | -- |
+| [9] [CenterSnap](https://arxiv.org/pdf/2203.01929.pdf) (RGB-D) | 83.5 | 80.2 | -- | -- | 27.2 | -- | 58.8 | 64.4 | -- |
+| [9] [CenterSnap-R](https://arxiv.org/pdf/2203.01929.pdf) (RGB-D) | 83.5 | 80.2 | -- | -- | 29.1 | -- | 64.3 | 70.9 | -- |
+| [10] [ShAPO](https://arxiv.org/pdf/2207.13691.pdf) | 85.3 | 79.0 | -- | -- | 48.8 | -- | 66.8 | 78.0 | -- |
 
 *Wrong reporting from CASS  
 **Different reporting of the results of the methods under comparison
 
-Speed analysed by FS-Net
+Speed analysed by FS-Net and measured in frame per second (fps)
 
 
 -------
@@ -93,4 +106,4 @@ If you would like to file a bug report or a feature request, use the Github issu
 
 ## Licence
 
-This work is licensed under the MIT License. To view a copy of this license, see [LICENSE](LICENSE).
+This repository is licensed under the MIT License. To view a copy of this license, see [LICENSE](LICENSE).
