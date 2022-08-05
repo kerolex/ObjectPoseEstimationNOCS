@@ -17,6 +17,8 @@ Share the manuscript, webpage link, and results. I will include your work in thi
 -------
 ## List of papers
 
+The following list is not exhaustive. Note that we differentiate the links between a published *paper* and an *arxiv* submission.
+
 [1] H. Wang, S. Sridhar, J. Huang, J. Valentin, S. Song, and L. J. Guibas, **Normalized object coordinate space for category-level 6D object pose
 and size estimation**, CVPR, 2019   
 [[paper](https://openaccess.thecvf.com/content_CVPR_2019/html/Wang_Normalized_Object_Coordinate_Space_for_Category-Level_6D_Object_Pose_and_CVPR_2019_paper.html)][[webpage](https://geometry.stanford.edu/projects/NOCS_CVPR2019/)][[code](https://github.com/hughw19/NOCS_CVPR2019)]
@@ -25,7 +27,7 @@ and size estimation**, CVPR, 2019
 [[paper](https://openaccess.thecvf.com/content_CVPR_2020/papers/Chen_Learning_Canonical_Shape_Space_for_Category-Level_6D_Object_Pose_and_CVPR_2020_paper.pdf)][[webpage]()][[code](https://github.com/densechen/CASS)]
 
 [3] X. Chen, Z. Dong, J. Song, A. Geiger, O. Hilliges, **Category Level Object Pose Estimation via Neural Analysis-by-Synthesis**, ECCV 2020  
-[[paper](https://arxiv.org/pdf/2008.08145.pdf)][[webpage](https://ait.ethz.ch/projects/2020/neural-object-fitting/)][[code](https://github.com/xuchen-ethz/neural_object_fitting)]
+[[arxiv](https://arxiv.org/pdf/2008.08145.pdf)][[webpage](https://ait.ethz.ch/projects/2020/neural-object-fitting/)][[code](https://github.com/xuchen-ethz/neural_object_fitting)]
 
 [4] M. Tian, M. H. Ang Jr, G. H. Lee, **Shape Prior Deformation for Categorical 6D Object Pose and Size Estimation**, ECCV 2020  
 [[paper](https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123660528.pdf)][[code](https://github.com/mentian/object-deformnet)]
@@ -55,7 +57,7 @@ and size estimation**, CVPR, 2019
 The NOCS CAMERA and REAL275 datasets were provided along with the work done by Wang et al. [1]. All the data can be downloaded [here](https://github.com/hughw19/NOCS_CVPR2019).
 
 ### Known issues
-* Code and data are not provided with an open license (see https://github.com/hughw19/NOCS_CVPR2019/issues/57) and hence both code and data should be assumed under copyright. Because of this, code and data can only be forked, downloaded, and/or viewed, but not used for any other purpose. Authors declared 
+* Code and data are not provided with an open license (see [Issue#57](https://github.com/hughw19/NOCS_CVPR2019/issues/57)) and hence both code and data should be assumed under copyright. Because of this, code and data can only be forked, downloaded, and/or viewed, but not used for any other purpose. Authors declared 
 that the data is only for non-commercial use; however, no license is provided when downloading the data that confirms this. 
 
 ## Results on NOCS-REAL275
@@ -90,6 +92,8 @@ Speed analysed by FS-Net and measured in frame per second (fps)
 * E. Brachmann, A. Krull, F. Michel, S. Gumhold, J. Shotton, C. Rother, **Learning 6D Object Pose Estimation Using 3D Object Coordinates**, ECCV 2014  
 [[paper](https://link.springer.com/chapter/10.1007/978-3-319-10605-2_35)]
 
+Note: this is the first paper I am aware was defining the representation of an object as 3D object coordinates, and then estimating the object pose from this representation. NOCS seems to be inspired by this work but simply applied to Mask R-CNN as an additional branch. 
+
 * Y. Lin, J. Tremblay, S. Tyree, P. A. Vela, S. Birchfield, **Single-stage Keypoint-based Category-level Object Pose Estimation from an RGB Image**, ICRA 2022  
 [[paper](https://arxiv.org/pdf/2109.06161.pdf)]
 
@@ -99,9 +103,7 @@ Speed analysed by FS-Net and measured in frame per second (fps)
 
 ## Enquiries, Question and Comments
 
-If you have any further enquiries, question, or comments, please contact a.xompero@gmail.com 
-
-If you would like to file a bug report or a feature request, use the Github issue tracker. 
+If you have any further enquiries, question, or comments, or you would like to file a bug report or a feature request, use the Github issue tracker. 
 
 
 ## Licence
